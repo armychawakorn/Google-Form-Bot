@@ -86,5 +86,5 @@ for i in range(10): #ทำซ้ำ 10 ครั้ง
 
 ## License
 
-[LGPV](https://choosealicense.com/licenses/agpl-3.0/)
+[GNU Lesser General Public License v2.1](https://github.com/armychawakorn/Google-Form-Bot/blob/main/LICENSE)
 
