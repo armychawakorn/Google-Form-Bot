@@ -21,7 +21,6 @@ for i in range(10): #ทำซ้ำ 10 ครั้ง
     #bot.send_Click(xpath)
     #=============================================
 
-
     #สั่งให้บอทเลือกตัวเลือกสุ่ม 1===========================
     bot.send_Random_Fill_Form([
         '//*[@id="mG61Hd"]/div[2]/div/div[2]/div[3]/div/div/div[2]/div/div[1]/div/div[2]/span/div[2]/div/div/div[3]/div',
