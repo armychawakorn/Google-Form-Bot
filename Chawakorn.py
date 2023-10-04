@@ -20,29 +20,13 @@ class Bot:
     def send_Click(self, xpath):
         self.driver.find_element('xpath', xpath).click()
 
-    def send_Random_Fill_Form(self, arr_xpath, append_score):
+    def send_Random_Click(self, arr_xpath):
         number = random.randint(0, len(arr_xpath) - 1)
-        self.driver.find_element('xpath', arr_xpath[number]).click()
-        if(append_score):
-            score = self.score
-            self.score = score + number
+        self.send_Click(arr_xpath[number])
 
     def send_Fill_Form(self, xpath, Text):
         self.driver.find_element('xpath', xpath).send_keys(Text)
-        
-    def get_Level(self):
-        score = self.score
-        if(score > 45):
-            return 'อาการซึมเศร้าระดับรุนแรงมาก'
-        elif(score > 31,40):
-            return 'อาการซึมเศร้าระดับรุนแรงค่อนข้างมาก'
-        elif(score > 21,30):
-            return 'อาการซึมเศร้าในระดับปานกลาง'
-        elif(score > 16,20):
-            return 'อาการซึมเศร้าในระดับเล็กน้อย'
-        else:
-            return 'อาการซึมเศร้าหรือมีอาการของโรคในระดับน้อยมาก'
-        
+    
     def close(self):
         time.sleep(.3)
         self.driver.quit()
